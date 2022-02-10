@@ -1,0 +1,31 @@
+Sempre começar um documento .html com a tag <!DOCTYPE> que indica ao 
+navegador qual arquivo ele está lendo. 
+
+Sempre utilizar a tag <html lang="pt-br"> que indica ao navegador
+qual a linguagem utilizada.
+
+Dentro de <head> colocar tudo o que queremos passar para o navegador, como
+a tag <meta charset="utf-8">, <title> que dá título a aba da nossa 
+aplicação web. Também é dentro de <head> que colocamos os arquivos
+que o html deve ler, como o stylesheet e a referência do style.css, como 
+exemplo.
+
+Dentro de <body> colocamos todo o conteúdo que queremos exibir.
+
+Para adicionar imagem, usa-se a tag <img> e dentro dela colocamos a fonte
+da imagem utilizando o scr, exemplo: <img scr="imagens/img.jpg">.
+
+Para adicionar identificador para ser identificado no CSS, utilizamos
+id="nome" e referenciamos em CSS com #nome;
+
+<p> sempre abre parágrafo;
+
+<h1> até <h6> define tamanhos e propriedades dos títulos;
+
+<ul> abre lista não ordenada de itens e cada item é referenciado com <li>;
+
+<em> deixa texto em itálico e <strong> em negrito.
+
+Para definir classes em html usasmos class="nome". E identificamos no CSS
+como .nome; Servem para definir vários itens de uma vez usando apenas
+uma marcação, ao invés de usar várias identificações, uma por uma.

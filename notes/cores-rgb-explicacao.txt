@@ -1,0 +1,18 @@
+Dicionário alfabético: ABCDEFG...
+Dicionário binário: 01
+Dicionário numérico: 0 1 2 3 4 5 6 7 8 9
+Dicionário hexadecimal: 0123456789ABCDEF
+RBG: Red Green Blue
+Representação de cor hexadecimal em CSS: # _ _ _ _ _ _
+Sendo que:
+0 = ausência de cor
+F = máximo de cor
+Preto, então: #000000; (00 em Red, 00 em Green, 00 em Blue)
+Branco, então: #FFFFFF; (FF em red, FF em green, FF em blue)
+Vermelho, então: #FF000000; (FF (máximo) em red, 00 (ausência) em green, 00 (ausência) em blue)
+
+Dicionário RGB: 0 1 2 3 4 5... 255
+0 = ausência de cor;
+255 = máximo de cor;
+Representação de cor RBG em CSS: rgb(255,255,255)
+Azul, então: rgb(0, 0, 255);

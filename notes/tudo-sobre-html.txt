@@ -29,3 +29,5 @@ id="nome" e referenciamos em CSS com #nome;
 Para definir classes em html usasmos class="nome". E identificamos no CSS
 como .nome; Servem para definir vários itens de uma vez usando apenas
 uma marcação, ao invés de usar várias identificações, uma por uma.
+
+<header> é o cabeçalho da página.

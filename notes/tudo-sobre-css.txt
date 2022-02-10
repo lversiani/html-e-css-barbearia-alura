@@ -1,0 +1,21 @@
+Para definir se uma fonte é com ou sem serifa, usamos o comando font-family;
+
+A largura de um elemento é definida por width e pode ser definida em pixels (px) ou em percentual.
+
+Text-align: define onde o texto vai ser alinhado. Center, left, right...
+
+Font-size: define tamanho da fonte. Ex: 20px;
+
+Font-style: define estilo da fonte. Ex: italic;
+
+Display: inline, inline-block, block... define se consigo movimentar um elemento.
+
+Vertical-align: define se quero alinhar um elemento em top ou bottom;
+
+A diferença entre inline e inline-block é que elementos com display: inline; não pode ser definido 
+height e width para eles, ao contrário do display: inline-block os elementos aceitam que seja definido 
+os respectivos atributos CSS.
+
+Padding: espaçamento interno. Definido em px.
+
+Margin: espaçamento externo. Definido em px.

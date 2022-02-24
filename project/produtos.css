@@ -1,0 +1,66 @@
+html {
+	font-family: sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0; /* padding = espaçamento interno,20px pra cima e pra baixo e 0px pra esquerda e pra direita */
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute; 
+	top: 120px;
+	right: 0px;
+}
+
+nav li { /* li = item de uma lista [ul (não ordenada) ou ol (ordenada)] */
+	display: inline;
+	margin: 0 0 0 15px; /* margin = espaçamento interno. a, b, c, d, onde: a = topo b = direita c = baixo d = esquerda; */
+}
+
+nav a { /* a = âncora, link */
+	text-transform: uppercase; /* transforma o texto de todas as âncoras de nav em maiúsculo */
+	color: #000000;
+	font-weight: bold; /* deixa a fonte com peso bold, ou seja, negrito */
+	font-size: 22px;
+	text-decoration: none; /* tira a decoração do texto, ou seja, tira o sublinhado */
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+

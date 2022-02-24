@@ -31,3 +31,9 @@ como .nome; Servem para definir vários itens de uma vez usando apenas
 uma marcação, ao invés de usar várias identificações, uma por uma.
 
 <header> é o cabeçalho da página.
+
+Tag <a> é uma tag de conteúdo, então abre e fecha. E é a abreviação de 
+anchor ou âncora, que linka um objeto a um item. 
+Clicando vamos pra outro endereço.
+
+Tag <nav> define menu de navegação. Tag que abre e fecha.

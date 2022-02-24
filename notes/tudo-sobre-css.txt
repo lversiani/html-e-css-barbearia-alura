@@ -19,3 +19,6 @@ os respectivos atributos CSS.
 Padding: espaçamento interno. Definido em px.
 
 Margin: espaçamento externo. Definido em px.
+
+A diferença entre ID e class: um ID pode ser usado apenas uma vez em um
+único objeto enquanto uma única class pode ser usada em vários elementos.

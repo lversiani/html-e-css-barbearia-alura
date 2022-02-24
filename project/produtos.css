@@ -8,7 +8,7 @@ header {
 }
 
 .caixa {
-	position: relative;
+	position: relative; /* posição relativa permite movimentar o elemento de acordo com o ponto inicial dele */
 	width: 1240px;
 	margin: 0 auto;
 }
@@ -34,7 +34,7 @@ nav a { /* a = âncora, link */
 
 nav a:hover {
 	color: #ffb938;
-	text-decoration: underline;
+	text-decoration: underline; /* underline como sublinhado embaixo do texto */
 
 }
 
@@ -56,11 +56,11 @@ nav a:hover {
 	border:  2px solid #000000; /* uma única linha define tamanho da borda, o estilo dela e a cor */
 }
 
-.produtos li:hover {
+.produtos li:hover { /* hover define como o elemento vai reagir quando o mouse estiver em cima dele */
 	border: 3px solid #ffb938;
 }
 
-.produtos li:active {
+.produtos li:active { /* active define como o elemento vai reagir quando for clicado, ativo */
 	border-color: #099c19;
 	color: white;
 	background: #099c19;

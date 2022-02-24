@@ -4,18 +4,18 @@ html {
 
 header {
 	background: #d4d4d2;
-	padding: 20px 0; /* padding = espaçamento interno,20px pra cima e pra baixo e 0px pra esquerda e pra direita */
+	padding: 20px 0; /* padding = espaçamento interno, 20px pra cima e pra baixo e 0px pra esquerda e pra direita */
 }
 
 .caixa {
 	position: relative;
-	width: 940px;
+	width: 1240px;
 	margin: 0 auto;
 }
 
 nav {
 	position: absolute; 
-	top: 120px;
+	top: 50px;
 	right: 0px;
 }
 
@@ -28,7 +28,7 @@ nav a { /* a = âncora, link */
 	text-transform: uppercase; /* transforma o texto de todas as âncoras de nav em maiúsculo */
 	color: #000000;
 	font-weight: bold; /* deixa a fonte com peso bold, ou seja, negrito */
-	font-size: 22px;
+	font-size: 18px;
 	text-decoration: none; /* tira a decoração do texto, ou seja, tira o sublinhado */
 }
 
@@ -56,6 +56,20 @@ nav a:hover {
 	border:  2px solid #000000; /* uma única linha define tamanho da borda, o estilo dela e a cor */
 }
 
+.produtos li:hover {
+	border: 3px solid #ffb938;
+}
+
+.produtos li:active {
+	border-color: #099c19;
+	color: white;
+	background: #099c19;
+}
+
+.produtos li:hover h2 {
+	font-size: 32px;
+}
+
 .produtos h2 {
 	font-size: 30px;
 	font-weight: bold;
@@ -69,4 +83,16 @@ nav a:hover {
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: url("produtos/imagens-produtos/bg.jpg");
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }

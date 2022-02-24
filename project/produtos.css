@@ -3,7 +3,7 @@ html {
 }
 
 header {
-	background: #BBBBBB;
+	background: #d4d4d2;
 	padding: 20px 0; /* padding = espaçamento interno,20px pra cima e pra baixo e 0px pra esquerda e pra direita */
 }
 
@@ -32,6 +32,12 @@ nav a { /* a = âncora, link */
 	text-decoration: none; /* tira a decoração do texto, ou seja, tira o sublinhado */
 }
 
+nav a:hover {
+	color: #ffb938;
+	text-decoration: underline;
+
+}
+
 .produtos {
 	width: 940px;
 	margin: 0 auto;
@@ -46,6 +52,8 @@ nav a { /* a = âncora, link */
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
+	border-radius: 24px 0 24px 0; /* arredonda os cantos da borda */
+	border:  2px solid #000000; /* uma única linha define tamanho da borda, o estilo dela e a cor */
 }
 
 .produtos h2 {
@@ -62,5 +70,3 @@ nav a { /* a = âncora, link */
 	font-weight: bold;
 	margin-top: 10px;
 }
-
-

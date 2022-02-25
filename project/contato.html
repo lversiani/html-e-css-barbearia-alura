@@ -11,7 +11,7 @@
 		<header>
 			<div class="caixa">
 				<h1>
-					<img src="logo.png" width="80px">
+					<img src="logo.png" width="80px" alt="Logo da barbearia Alura"> <!-- em termos de acessibilidade o campo alt é muito importante. ele é uma alternativa para pessoas com baixa visão -->
 				</h1>
 
 				<nav>
@@ -27,20 +27,46 @@
 		<main>
 			<form>
 				<label for="nomecompleto">Nome completo</label> <!-- o for associa o label a uma identidade de input. -->
-				<input type="text" id="nomecompleto"> <!-- input precisa ter um tipo, neste caso, é um input de texto. Colocamos o id para que esse input possa ser identificado pelo label e associado a ele. -->
+				<input type="text" id="nomecompleto" class="input-padrao" required> <!-- input precisa ter um tipo, neste caso, é um input de texto. Colocamos o id para que esse input possa ser identificado pelo label e associado a ele. Required impõe obrigatoriedade no campo. -->
 
 				<label for="email">E-mail</label>
-				<input type="text" id="email">
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!-- Placeholder define texto de exemplo pro usuário preencher e some quando usuário começa a digitar. -->
 
 				<label for="telefone">Telefone</label>
-				<input type="text" id="telefone">
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-				<input type="submit" value="Enviar formulário"> <!-- o input de tipo submit é um botão de enviar e o value define o valor desse botão e alteramos o texto exibido. -->
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="58" rows="10" id="mensagem" class="input-padrao" required> 
+				</textarea> <!-- o textarea é uma tag de conteúdo, então abre e fecha. é um input para digitar mensagem em campo. cols define as colunas de texto e rows as linhas de texto e isso define o tamanho do campo de mensagem. -->
+				<fieldset> <!-- tag para preenchimentos -->
+					<legend>Como prefere nosso contato?</legend> <!-- dentro de um fieldset não usa-se parágrafo, usa legend. -->
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+					 <!-- o input tipo radio é um input de seleção que recebe valor e id para associar ao label. para que aconteça o tipo de interação que permite marcar apenas um radio, todos eles precisam estar dentro de um grupo. esse grupo é definido com name, e todos os inputs tipo radio precisam ter o mesmo name para que seja possível selecionar apenas um radio. -->
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> <!-- a palavra checked deixa o campo pré-marcado antes do usuário marcar -->
+					
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select> <!-- a tag select é uma tag de conteúdo, então abre e fecha. define um input de seleção e dentro da tag você coloca as opções que o usuário tem para selecionar. -->
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label> <!-- input tipo checkbox, caixa de marcação -->
+
+				<input type="submit" value="Enviar" class="enviar"> <!-- o input de tipo submit é um botão de enviar e o value define o valor desse botão e alteramos o texto exibido. -->
+
 			</form>
 		</main>
 
 		<footer>
-			<img src="logo-branco.png" width="80px">
+			<img src="logo-branco.png" width="80px" alt="Logo da barbearia Alura">
 			<p class="copyright"> &copy; Copyright Barbearia Alura - 2022 </p> <!-- o código &copy; foi encontrado no unicode, código de entidade para qualquer emoji/caractere especial -->
 		</footer>
 	</body>

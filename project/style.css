@@ -2,6 +2,7 @@
 
 html {
 	font-family: sans-serif;
+
 }
 
 header {
@@ -65,14 +66,14 @@ nav a:hover { /* hover dos links de navegação */
 	transform: scale(1.05);
 }
 
+.produtos li:hover h2 {
+	transform: scale(1.06); /* utilizei para tirar a movimentação do footer quando há algum hover. Ainda não está 100% */
+}
+
 .produtos li:active { /* active define como o elemento vai reagir quando for clicado, ativo */
 	border-color: #f26522;
 	color: white;
 	background: #f26522;
-}
-
-.produtos li:hover h2 {
-	transform: scale(1.06); /* utilizei para tirar a movimentação do footer quando há algum hover. Ainda não está 100% */
 }
 
 .produtos h2 { /* h2 dos produtos */
@@ -156,4 +157,8 @@ Portanto, se tiver várias definições pro mesmo elemento, o que tiver maior pe
 .enviar:hover {
 	background: darkorange;
 	/* transform: scale(1.2); /* aumenta todo o elemento em 20% ou 1.2 vezes */
+}
+
+table {
+	margin: 24px 24px;
 }

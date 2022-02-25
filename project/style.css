@@ -1,42 +1,126 @@
-body {
+/* Padrão para todas as páginas: header e footer; */
+
+html {
 	font-family: sans-serif;
-	}
-#banner {
-	width: 100%;
 }
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+
+header {
+	background: #c9c9c9;
+	padding: 20px 0; /* padding = espaçamento interno, 20px pra cima e pra baixo e 0px pra esquerda e pra direita */
 }
-.titulo-principal{
-	padding-left: 20px;
+
+.caixa {
+	position: relative; /* posição relativa permite movimentar o elemento de acordo com o ponto inicial dele */
+	width: 1240px;
+	margin: 0 auto;
 }
-.titulo-centralizado {
-	text-align: center;
+
+nav { /* Menu de navegação */
+	position: absolute; 
+	top: 50px;
+	right: 0px;
 }
-p {
-	text-align: center;
-	}
-#missao {
-	font-size: 20px;
+
+nav li { /* li = item de uma lista [ul (não ordenada) ou ol (ordenada)] */
+	display: inline;
+	margin: 0 0 0 16px; /* margin = espaçamento interno. a, b, c, d, onde: a = topo b = direita c = baixo d = esquerda; */
 }
-em strong {
-	color: #FF0000;
+
+nav a { /* a = âncora, link */
+	text-transform: uppercase; /* transforma o texto de todas as âncoras de nav em maiúsculo */
+	color: #000000;
+	font-weight: bold; /* deixa a fonte com peso bold, ou seja, negrito */
+	font-size: 16px;
+	text-decoration: none; /* tira a decoração do texto, ou seja, tira o sublinhado */
 }
-.itens {
-	font-style: italic;
+
+nav a:hover { /* hover dos links de navegação */
+	color: #f26522;
+	text-decoration: underline; /* underline como sublinhado embaixo do texto */
+
 }
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
+
+/* Página de produtos */
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
-ul {
+
+.produtos li { /* itens dos produtos */
 	display: inline-block;
+	text-align: center;
+	width: 30%;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-radius: 24px 0 24px 0; /* arredonda os cantos da borda */
+	border:  2px solid #000000; /* uma única linha define tamanho da borda, o estilo dela e a cor */
 }
-.imagembeneficios {
-	width: 50%;
-	
+
+.produtos li:hover { /* hover define como o elemento vai reagir quando o mouse estiver em cima dele */
+	border: 3px solid #f26522;
+}
+
+.produtos li:active { /* active define como o elemento vai reagir quando for clicado, ativo */
+	border-color: #f26522;
+	color: white;
+	background: #f26522;
+}
+
+.produtos li:hover h2 {
+	transform: scale(1.06); /* utilizei para tirar a movimentação do footer quando há algum hover. Ainda não está 100% */
+}
+
+.produtos h2 { /* h2 dos produtos */
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao { /* texto de descrição dos produtos */
+	font-size: 18px;
+}
+
+.produto-preco { /* preço dos produtos */
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* Footer: padrão */;
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: url("bg.jpg");
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/* Página de contatos */
+
+main {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label {
+	display: block;
+	font-size: 14px;
+	margin: 0 0 8px;
+}
+
+form input {
+	display: block;
+	margin: 0 0 8px;
+	padding: 4px 24px;
+	width: 32%;
 }

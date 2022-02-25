@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Barbearia Alura</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1>
+					<img src="logo.png" width="80px">
+				</h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomecompleto">Nome completo</label> <!-- o for associa o label a uma identidade de input. -->
+				<input type="text" id="nomecompleto"> <!-- input precisa ter um tipo, neste caso, é um input de texto. Colocamos o id para que esse input possa ser identificado pelo label e associado a ele. -->
+
+				<label for="email">E-mail</label>
+				<input type="text" id="email">
+
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone">
+
+				<input type="submit" value="Enviar formulário"> <!-- o input de tipo submit é um botão de enviar e o value define o valor desse botão e alteramos o texto exibido. -->
+			</form>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" width="80px">
+			<p class="copyright"> &copy; Copyright Barbearia Alura - 2022 </p> <!-- o código &copy; foi encontrado no unicode, código de entidade para qualquer emoji/caractere especial -->
+		</footer>
+	</body>
+</html>

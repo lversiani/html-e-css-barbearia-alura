@@ -162,3 +162,15 @@ Portanto, se tiver várias definições pro mesmo elemento, o que tiver maior pe
 table {
 	margin: 24px 24px;
 }
+
+thead {
+	background: #555555;
+	color: white;
+	font-size: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 4px 8px; /* padding = espaçamento interno */
+}
+

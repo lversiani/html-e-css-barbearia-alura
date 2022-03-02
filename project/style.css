@@ -1,13 +1,12 @@
 /* Padrão para todas as páginas: header e footer; */
 
-html {
-	font-family: sans-serif;
-
-}
-
 header {
 	background: #c9c9c9;
 	padding: 16px 0; /* padding = espaçamento interno, 20px pra cima e pra baixo e 0px pra esquerda e pra direita */
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .caixa {
@@ -184,6 +183,7 @@ td, th {
 	text-align: center;
 	font-size: 2em; /* em é a medida proporcional para pixels */
 	margin: 0 0 1em;
+	clear: left;
 }
 
 .principal p {
@@ -198,6 +198,13 @@ td, th {
 	font-style: italic;
 }
 
+.utensilios {
+	width: 116px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
 .imagembeneficios {
+	width: 60%;
 	
 }

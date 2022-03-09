@@ -29,7 +29,6 @@ nav li { /* li = item de uma lista [ul (não ordenada) ou ol (ordenada)] */
 nav a { /* a = âncora, link */
 	text-transform: uppercase; /* transforma o texto de todas as âncoras de nav em maiúsculo */
 	color: #000000;
-	font-weight: bold; /* deixa a fonte com peso bold, ou seja, negrito */
 	font-size: 16px;
 	text-decoration: none; /* tira a decoração do texto, ou seja, tira o sublinhado */
 }
@@ -37,7 +36,7 @@ nav a { /* a = âncora, link */
 nav a:hover { /* hover dos links de navegação */
 	color: #f26522;
 	text-decoration: underline; /* underline como sublinhado embaixo do texto */
-
+	font-weight: bold;
 }
 
 /* Página de produtos */
@@ -106,8 +105,7 @@ footer {
 /* Página de contatos */
 
 main {
-	width: 1240px;
-	margin: 0 auto;
+	
 }
 
 form {
@@ -184,10 +182,20 @@ td, th {
 	font-size: 2em; /* em é a medida proporcional para pixels */
 	margin: 0 0 1em;
 	clear: left;
+	/* color: rgba(0,0,0,0.4); adiciona opacidade em cor rgb usando o rgba e o último parâmetro define a opacidade. */
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 1240px;
+	margin: 0 auto;
 }
 
 .principal p {
 	margin: 0 0 1em;
+	width: 1240px;
+	margin: 0 auto;
 }
 
 .principal strong {
@@ -204,19 +212,62 @@ td, th {
 	margin: 0 20px 20px 0;
 }
 
-.imagembeneficios {
-	width: 60%;
-	
-}
-
 .mapa {
 	padding: 2em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 1240px;
+	margin: 0 auto;
 }
 
 .mapa p {
 	margin: 0 0 2em;
 	text-align: center;
 }
+
+.beneficios {
+	padding: 2em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5em; /* altura da linha */
+}
+
+.itens:first-child { /* utilização de pseudo-class. selecionar o primeiro elemento (first child) da lista de itens. também podemos usar o last-child para modificar apenas o último elemento de uma lista e o nth-child(xn) para modificar n elementos (pares ou ímpres) */
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "❯ ";
+}
+
+.imagem-beneficios {
+	width: 50%;
+	height: 180px;
+	opacity: 1; /* você define o quanto quer exibir, neste 0.7, 70% de exibição */
+	transition: 400ms;
+	box-shadow: 10px 10px 5px #000000; /* o terceiro parâmetro é o blur */
+	
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.7;
+}
+
 .video {
 	width: 560px;
 	margin: 1em auto;
